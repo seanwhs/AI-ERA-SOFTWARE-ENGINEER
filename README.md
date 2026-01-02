@@ -31,65 +31,6 @@ In 2026+, this engineer is no longer optional.
 
 ---
 
-## 📁 Repository Structure
-
-```
-ai-era-software-engineer/
-├── README.md
-├── MANIFESTO.md
-│
-├── 01-competency-model/
-│   ├── bridge-engineer-checklist.md
-│   ├── competency-matrix.md
-│   └── scoring-guide.md
-│
-├── 02-self-audit/
-│   ├── weekly-self-audit.md
-│   ├── monthly-review.md
-│   └── failure-postmortem-template.md
-│
-├── 03-hands-on-drills/
-│   ├── backend/
-│   ├── frontend/
-│   ├── integration/
-│   └── ai-orchestration/
-│
-├── 04-exams/
-│   ├── month-1-backend-exam.md
-│   ├── month-2-frontend-exam.md
-│   ├── month-3-integration-exam.md
-│   └── grading-rubric.md
-│
-├── 05-hiring-rubric/
-│   ├── junior.md
-│   ├── bridge-engineer.md
-│   ├── senior.md
-│   ├── interview-questions.md
-│   └── take-home-assignment.md
-│
-├── 06-system-design/
-│   ├── api-first-architecture.md
-│   ├── failure-modes.md
-│   ├── scalability-vs-complexity.md
-│   └── security-boundaries.md
-│
-├── 07-ai-in-practice/
-│   ├── ai-as-intern.md
-│   ├── review-checklist.md
-│   ├── safe-usage-guidelines.md
-│   └── real-world-ai-patterns.md
-│
-├── 08-real-world-scenarios/
-│   ├── 3am-outage-scenario.md
-│   ├── data-breach-simulation.md
-│   ├── performance-regression.md
-│   └── bad-requirements-workshop.md
-│
-└── LICENSE
-```
-
----
-
 ## 📦 How to Use This Repo
 
 ### 👤 Individuals
@@ -136,7 +77,7 @@ You are a **system owner**.
 
 The shift toward an **AI-augmented era** isn’t just about using smarter tools — it’s a **fundamental change in how developers think and work**. 🚀  
 
-**📺 Watch here:** [Software Development in the AI Era]([https://chatgpt.com/c/69581a0a-54ec-8324-9f36-d2857e0a82ec](https://www.youtube.com/watch?v=TtumWUuS0DE))  
+**📺 Watch here:** [Software Development in the AI Era](https://www.youtube.com/watch?v=TtumWUuS0DE)
 
 ### Key Takeaways:
 - 🤖 **Software 2.0 → Software 3.0:** AI agents are transforming the development lifecycle.  
