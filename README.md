@@ -136,7 +136,7 @@ You are a **system owner**.
 
 The shift toward an **AI-augmented era** isn’t just about using smarter tools — it’s a **fundamental change in how developers think and work**. 🚀  
 
-**📺 Watch here:** [Software Development in the AI Era](https://chatgpt.com/c/69581a0a-54ec-8324-9f36-d2857e0a82ec)  
+**📺 Watch here:** [Software Development in the AI Era]([https://chatgpt.com/c/69581a0a-54ec-8324-9f36-d2857e0a82ec](https://www.youtube.com/watch?v=TtumWUuS0DE))  
 
 ### Key Takeaways:
 - 🤖 **Software 2.0 → Software 3.0:** AI agents are transforming the development lifecycle.  
