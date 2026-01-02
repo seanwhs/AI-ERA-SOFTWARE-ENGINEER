@@ -2,8 +2,6 @@
 
 > **Purpose:** Convert checklist items into repeatable, concrete exercises. Each drill maps directly to real-world readiness.
 
-Folder structure: `03-hands-on-drills/backend/`
-
 ---
 
 ## Drill 1: API Contract Audit
