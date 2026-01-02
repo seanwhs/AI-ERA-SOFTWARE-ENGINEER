@@ -132,7 +132,20 @@ you are no longer a typist.
 You are a **system owner**.
 
 ---
+## 🎥 Recommended Video: Software Development in the AI Era
 
+The shift toward an **AI-augmented era** isn’t just about using smarter tools — it’s a **fundamental change in how developers think and work**. 🚀  
+
+**📺 Watch here:** [Software Development in the AI Era](https://chatgpt.com/c/69581a0a-54ec-8324-9f36-d2857e0a82ec)  
+
+### Key Takeaways:
+- 🤖 **Software 2.0 → Software 3.0:** AI agents are transforming the development lifecycle.  
+- 🛠️ **Skills that matter more than ever:** Problem-solving, system design, and technical specifications > memorizing syntax.  
+- 🔄 **AI-augmented development:** Focus shifts from writing code manually to orchestrating and guiding intelligent agents.  
+
+> 💡 **Pro Tip:** Watch this video to understand how to position yourself as a strategic developer in the AI-first world — not just a coder.
+
+---
 ## 📜 License
 
 MIT — Fork it. Adapt it. Use it in production.
