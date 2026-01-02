@@ -21,7 +21,7 @@
 * **Forbidden Patterns:** No `any` types; no direct `os.system` calls; no external `fetch` (use internal `HttpClient`).
 * **Performance SLIs:** P99 Latency < 200ms; Memory Ceiling: 512MB.
 
-> **Technical Depth Callout:** AI cannot reason about business-specific idempotency or consistency; these must be explicitly encoded in the spec.
+> **Technical Depth Callout:** AI cannot reason about business-specific idempotency, consistency, or concurrency; these must be explicitly encoded in the spec.
 
 #### 1.2 Data Contract (Input/Output)
 
@@ -50,7 +50,7 @@ interface SuccessResponse {
 4. **Failure A (Network):** DB unreachable → Return `503` + `Retry-After`.
 5. **Failure B (Logic):** Resource collision → Return `409 Conflict`.
 
-> **Technical Depth Callout:** Explicitly enumerate failure modes; AI will not infer distributed system edge cases.
+> **Technical Depth Callout:** Explicitly enumerate failure modes; AI will not infer distributed system edge cases or cascading failures.
 
 ---
 
@@ -70,7 +70,7 @@ interface SuccessResponse {
 - [ ] Scale Guard: Pagination / LIMIT clauses applied to all collection queries.
 ```
 
-> **Technical Depth Callout:** The checklist enforces **adversarial thinking**; each step prevents AI’s most common hallucinations and blind spots.
+> **Technical Depth Callout:** Each checklist step enforces **adversarial thinking**, ensuring AI hallucinations, N+1 queries, and hidden logic flaws are caught before merge.
 
 ---
 
@@ -82,40 +82,117 @@ interface SuccessResponse {
 
 | Level        | Role                            | Key Metric                                           |
 | ------------ | ------------------------------- | ---------------------------------------------------- |
-| Operator     | Uses AI to close tasks          | Syntax accuracy & speed                              |
+| Operator     | Uses AI to close tasks          | Syntax accuracy & task speed                         |
 | Orchestrator | Coordinates multi-file AI edits | Integration stability & test coverage                |
 | System Owner | Designs Spec & Review Framework | **Hallucination Detection Rate & System Resilience** |
 
 ### 3.2 Onboarding Sprints
 
-1. **Sprint 1 (Foundation):** Spec-writing workshop; define failure modes before touching code.
+1. **Sprint 1 (Foundation):** Spec-writing workshop; define **failure modes** before code.
 2. **Sprint 2 (Adversarial):** “Find the Hallucination” drills; review intentionally flawed AI PRs.
 3. **Sprint 3 (3 A.M. Drill):** Debug complex AI-generated distributed system failures **without AI**.
 
-> **Technical Depth Callout:** Each sprint reinforces **first-principles reasoning**, essential for real-world incidents when AI suggestions fail.
+> **Technical Depth Callout:** Each sprint reinforces **first-principles reasoning** and **failure-mode thinking**, critical for production-level resilience.
 
 ---
 
-## 4️⃣ Operational Excellence: Call to Action
+## 4️⃣ Phase IV: Operational Excellence
 
 ### For Individual Engineers
 
-* Write **Technical Specs first**. If the AI can’t summarize your spec accurately, your spec is too vague.
-* Treat AI output as **untrusted intern** until manually validated against **spec, failure modes, and observability**.
+* Write **Technical Specs first**. If AI cannot summarize your spec accurately, it is too vague.
+* Treat AI output as an **untrusted intern** until validated against **spec, failure modes, and observability**.
 
 ### For Engineering Managers
 
-* Track **AI Logic Error Detection** and **Failure Mode Coverage** instead of velocity or lines of code.
-* Normalize **Adversarial PR drills** monthly to keep critical thinking sharp.
+* Track **AI Logic Error Detection** and **Failure Mode Coverage** instead of velocity or LOC.
+* Normalize **Adversarial PR drills** monthly to strengthen systemic oversight.
 
-> **Technical Depth Callout:** Continuous evaluation of AI output builds systemic resilience, not just code output.
+> **Technical Depth Callout:** Continuous evaluation of AI output ensures **system reliability**, not just code delivery.
+
+---
+
+## 5️⃣ AI-Era System Owner Workflow (ASCII Diagram)
+
+```markdown
+        ┌────────────────────┐
+        │  📄 Technical Spec │
+        │  (Constraint-First)│
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │  🤖 AI Generates   │
+        │     Code           │
+        └─────────┬──────────┘
+                  │
+                  ▼
+        ┌────────────────────┐
+        │  🔍 Hallucination  │
+        │     Detection      │
+        └───────┬────────────┘
+                │
+        ┌───────┴─────────────┐
+        │                     │
+      🔴 Yes                ✅ No
+        │                     │
+        ▼                     ▼
+ ┌──────────────┐       ┌──────────────┐
+ │ Refactor /   │       │  Zero-Trust  │
+ │ Correct AI   │       │  PR Review   │
+ └──────┬───────┘       └─────┬────────┘
+        │                     │
+        ▼                     ▼
+ ┌──────────────┐       ┌──────────────┐
+ │ Update Spec  │       │ 🔒 Security &│
+ │ & Guardrails │       │   Dependency │
+ └──────┬───────┘       │   Audit      │
+        │               └─────┬────────┘
+        ▼                     │
+ ┌──────────────┐       ┌──────────────┐
+ │ Loop to AI   │       │ ✅ Auth &    │
+ │ Generate     │       │   Permission │
+ │ Code         │       │   Checks     │
+ └──────┬───────┘       └─────┬────────┘
+        │                     │
+        ▼                     ▼
+ ┌──────────────┐       ┌──────────────┐
+ │ 3 A.M. Drill │       │ 🟠 Injection │
+ │ / Debug Test │       │ & Safety     │
+ └──────┬───────┘       └─────┬────────┘
+        │                     │
+        ▼                     ▼
+ ┌──────────────┐       ┌──────────────┐
+ │ Metrics &    │       │ ✅ Observa- │
+ │ Feedback Loop│       │   bility    │
+ └──────┬───────┘       └─────┬────────┘
+        │                     │
+        └─────────────┬───────┘
+                      ▼
+               ┌──────────────┐
+               │ Merge / Reject│
+               │ AI PR         │
+               └─────┬────────┘
+                     ▼
+               ┌──────────────┐
+               │ Continuous   │
+               │ Spec Update  │
+               │ & Guardrails │
+               └──────────────┘
+```
+
+### ✅ Color / Emoji Guide
+
+* 🔴 **Critical** – Human review required immediately (hallucinations, injections).
+* 🟠 **High** – Verify for logic gaps, idempotency, or N+1 issues.
+* ✅ **Human Approved** – System owner confirms correctness.
 
 ---
 
 ## 🏁 Final Principle
 
-> **AI raises the floor so you can reach the ceiling. Don’t spend your career standing on the floor.**
-> Only System Owners actively orchestrate AI safely while maintaining production-grade reliability.
+> **AI raises the floor; human judgment raises the ceiling.**
+> Only System Owners orchestrate AI safely while maintaining **production-grade reliability**.
 
 ---
 
