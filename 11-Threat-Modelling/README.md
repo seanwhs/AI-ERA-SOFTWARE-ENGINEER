@@ -110,9 +110,9 @@ Enable engineering and security teams to **identify potential threats, assess ri
 
 ---
 
-## 4️⃣ Integration with 3 A.M. Drill / Desktop Exercises
+## 4️⃣ 3 A.M. Drill / Desktop Exercises
 
-* Use this threat model **before the exercise** to inject realistic incidents.
+* Use this threat model **before the exercises** to inject realistic incidents.
 * Score each scenario based on **likelihood, impact, and red-herring probability**.
 * Document how **human-first investigation + AI-assisted response** mitigates each identified threat.
 * Post-exercise, **update the threat model** based on lessons learned, new attack vectors, and AI observations.
