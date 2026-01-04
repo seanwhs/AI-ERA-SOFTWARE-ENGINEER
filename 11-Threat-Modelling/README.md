@@ -118,3 +118,31 @@ Enable engineering and security teams to **identify potential threats, assess ri
 * Post-exercise, **update the threat model** based on lessons learned, new attack vectors, and AI observations.
 
 ---
+# Threat Modeling
+
+Threat modeling ensures systems are secure **by design**, not by accident.
+
+---
+
+## Goals
+- Identify potential attackers
+- Understand attack surfaces
+- Reduce risk before implementation
+
+---
+
+## Typical Threat Modeling Tasks
+- Identify assets and trust boundaries
+- Enumerate threats (STRIDE)
+- Assess likelihood and impact
+- Define mitigations
+
+---
+
+## AI-Era Considerations
+- AI-generated code may introduce insecure patterns
+- Engineers must review and validate security assumptions
+- Threat models must be updated continuously
+
+Security is not optional.
+It is an architectural responsibility.
