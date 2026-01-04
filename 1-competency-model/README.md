@@ -129,8 +129,6 @@ This competency matrix can be used as a self-assessment tool to track your progr
 * **Growth Dimensions**: System Thinking, Backend Ownership, Frontend Integration, and Security Management.
 * **Incident Anatomy**: Understanding and correcting common AI failures.
 
-Download the full checklist [here](link_to_checklist).
-
 ---
 
 ## 📚 **Usage Guidelines**
