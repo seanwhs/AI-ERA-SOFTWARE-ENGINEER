@@ -188,11 +188,12 @@ The growth ladder illustrates how software engineers develop their **ownership**
 ### **Level: Foundational**
 
 * **Ownership:** Task-level ownership, working under guidance.
-* **AI Interaction:** **The Apprentice.** Uses AI for scaffolding, documentation, and learning.
-* **Focus:** Writing
+* **AI Interaction:** **The Apprentice.**
 
 
-code, learning system design, and basic problem-solving.
+Uses AI for scaffolding, documentation, and learning.
+
+* **Focus:** Writing code, learning system design, and basic problem-solving.
 
 ---
 
