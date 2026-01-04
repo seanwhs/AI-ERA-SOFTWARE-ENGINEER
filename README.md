@@ -117,7 +117,43 @@ The shift toward an **AI-augmented era** isn’t just about using smarter tools 
 
 - 🤖 **Software 2.0 → Software 3.0:** AI agents are transforming the development lifecycle.  
 - 🛠️ **Skills that matter more than ever:** Problem-solving, system design, and technical specifications > memorizing syntax.  
-- 🔄 **AI-augmented development:** Focus shifts from writing code manually to orchestrating and guiding intelligent agents.  
+- 🔄 **AI-augmented development:** Focus shifts from writing code manually to orchestrating and guiding intelligent agents.
+- 
+---
+## Why This Repository Exists
+
+The AI era is not eliminating software engineers — it is redefining what *engineering excellence* means.
+
+Modern AI tools can:
+- Generate syntactically correct code
+- Translate between languages and frameworks
+- Implement well-defined functions rapidly
+
+However, AI **cannot reliably**:
+- Define system boundaries
+- Make architectural trade-offs
+- Design for scalability, resilience, and security
+- Understand business constraints and risk tolerance
+- Take accountability for production systems
+
+As a result, the most valuable skills for software engineers are shifting from
+**syntax memorization** toward **system-level thinking**.
+
+### Skills That Matter More Than Ever
+
+- Problem decomposition and requirements analysis  
+- System design and software architecture  
+- Technical specification and contract definition  
+- Security-by-design and Zero Trust principles  
+- Verification, testing, and risk management  
+- Human-in-the-loop oversight of AI-generated code  
+
+This repository defines a **competency model for the AI-era software engineer** —
+an engineer who designs, governs, and secures systems rather than merely writing code.
+
+AI is a tool.  
+Engineers remain responsible for correctness, safety, and outcomes.
+
 
 > 💡 **Pro Tip:** Watch this video to understand how to position yourself as a **strategic developer in the AI-first world** — not just a coder.
 
