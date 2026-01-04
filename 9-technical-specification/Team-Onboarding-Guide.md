@@ -1,4 +1,4 @@
-# 🏫 AI-Augmented Engineering: Team Onboarding Guide
+# 🏫 **AI-Augmented Engineering: Team Onboarding Guide**
 
 **Purpose:** Equip your engineering team to safely, efficiently, and consistently review AI-generated or AI-assisted code. The guide integrates **adversarial review principles**, **hallucination mitigation**, and **System Owner accountability** into daily workflows.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 1️⃣ Onboarding Philosophy
+## 1️⃣ **Onboarding Philosophy**
 
 > In the AI era, **automation raises the floor, human judgment raises the ceiling.**
 
@@ -18,11 +18,11 @@ The goal of this onboarding program is **not to teach coding syntax**, but to **
 
 ---
 
-## 2️⃣ Core Competencies
+## 2️⃣ **Core Competencies**
 
 Every team member should master these skills:
 
-| Competency                  | Description                                               | Target Outcome                                                   |
+| **Competency**              | **Description**                                           | **Target Outcome**                                               |
 | --------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------- |
 | **AI Collaboration**        | Generate multiple options, review outputs critically      | Engineer can guide AI to produce maintainable, correct code      |
 | **Adversarial Review**      | Hunt for logical gaps, security flaws, and hallucinations | Engineer anticipates and blocks failure modes                    |
@@ -33,41 +33,38 @@ Every team member should master these skills:
 
 ---
 
-## 3️⃣ Onboarding Workflow
+## 3️⃣ **Onboarding Workflow**
 
-**Step 1: Foundation Session (2–3 hours)**
+### **Step 1: Foundation Session (2–3 hours)**
+
 *Overview of AI-Augmented Engineering and System Ownership principles.*
 
 * Review **Technical Specification Template** optimized for AI consumption.
 * Discuss **hallucination archetypes**: Phantom APIs, Logic Mirage, Security Blindspots.
 * Introduce the **System Owner PR Template**.
 
----
+### **Step 2: Guided Hands-On Drill (4 hours)**
 
-**Step 2: Guided Hands-On Drill (4 hours)**
 *Engineer works with AI-generated PRs in a controlled environment.*
 
-1. **AI Draft:** Generate code for a predefined module using an LLM.
-2. **Adversarial Review:** Apply the PR template step-by-step.
-3. **Discussion:** Identify hallucinations, potential security flaws, and logical gaps.
-4. **Documentation:** Record mitigation steps and updates to the Technical Spec.
+1. **AI Draft**: Generate code for a predefined module using an LLM (Large Language Model).
+2. **Adversarial Review**: Apply the PR template step-by-step.
+3. **Discussion**: Identify hallucinations, potential security flaws, and logical gaps.
+4. **Documentation**: Record mitigation steps and updates to the Technical Spec.
 
-> Objective: Train engineers to **think like the AI’s adversary**, not just its user.
+> **Objective:** Train engineers to **think like the AI’s adversary**, not just its user.
 
----
+### **Step 3: 3 A.M. Debugger Drill (2 hours)**
 
-**Step 3: 3 A.M. Debugger Drill (2 hours)**
 *Simulates high-pressure failure scenarios.*
 
 1. Provide a multi-service AI-generated system with hidden race conditions or deadlocks.
 2. Engineer must identify the root cause **without AI** for the first 20 minutes.
 3. Post-analysis, use AI to propose refactor patterns, guided by human insight.
 
-> Outcome: Engineers gain **first-principles debugging skills**, reinforced by AI guidance.
+> **Outcome:** Engineers gain **first-principles debugging skills**, reinforced by AI guidance.
 
----
-
-**Step 4: Security & Observability Lab (2 hours)**
+### **Step 4: Security & Observability Lab (2 hours)**
 
 *Train engineers to validate AI-generated code for operational safety.*
 
@@ -77,29 +74,27 @@ Every team member should master these skills:
 
 > Engineers learn to **measure, monitor, and mitigate AI risk** in real time.
 
----
-
-**Step 5: Integration & Review Cycle (Ongoing)**
+### **Step 5: Integration & Review Cycle (Ongoing)**
 
 * Establish a weekly **Adversarial PR Review** session.
 * Rotate **System Owner** responsibilities to ensure knowledge distribution.
 * Track **metrics:** number of AI hallucinations caught, incidents prevented, time-to-detect.
 
-> Goal: Institutionalize **AI-aware review culture** across the team.
+> **Goal:** Institutionalize **AI-aware review culture** across the team.
 
 ---
 
-## 4️⃣ Team Culture Principles
+## 4️⃣ **Team Culture Principles**
 
-1. **Zero-Trust AI:** Always assume AI output can fail or hallucinate.
-2. **Document Everything:** Every deviation or exception must be logged in the Technical Spec.
-3. **Shared Ownership:** No PR merges without **at least one System Owner** sign-off.
-4. **Continuous Learning:** Review incidents post-mortem and update the adversarial checklist.
-5. **Celebrate Critical Thinking:** Reward engineers for catching subtle AI errors or architectural oversights.
+1. **Zero-Trust AI**: Always assume AI output can fail or hallucinate.
+2. **Document Everything**: Every deviation or exception must be logged in the Technical Spec.
+3. **Shared Ownership**: No PR merges without **at least one System Owner** sign-off.
+4. **Continuous Learning**: Review incidents post-mortem and update the adversarial checklist.
+5. **Celebrate Critical Thinking**: Reward engineers for catching subtle AI errors or architectural oversights.
 
 ---
 
-## 5️⃣ Manager Playbook
+## 5️⃣ **Manager Playbook**
 
 Managers should focus on **orchestration, not syntax evaluation**:
 
@@ -110,26 +105,28 @@ Managers should focus on **orchestration, not syntax evaluation**:
 
 ---
 
-## 6️⃣ Success Metrics
+## 6️⃣ **Success Metrics**
 
-* **Hallucination Detection Rate:** % of AI errors caught pre-merge.
-* **Mean Time to Detect (MTTD) AI Faults:** Time from PR submission to issue detection.
-* **Coverage of Failure Modes:** % of Technical Spec failure scenarios tested.
-* **System Owner Engagement:** Frequency of critical review sign-offs per engineer.
+| **Metric**                               | **Definition**                                       |
+| ---------------------------------------- | ---------------------------------------------------- |
+| **Hallucination Detection Rate**         | % of AI errors caught pre-merge.                     |
+| **Mean Time to Detect (MTTD) AI Faults** | Time from PR submission to issue detection.          |
+| **Coverage of Failure Modes**            | % of Technical Spec failure scenarios tested.        |
+| **System Owner Engagement**              | Frequency of critical review sign-offs per engineer. |
 
-> These metrics quantify both **AI oversight effectiveness** and **human ownership**.
-
----
-
-## 7️⃣ Optional Extensions
-
-* **Advanced Security Workshop:** Deep dive into AI-specific attack vectors (prompt injection, phantom dependencies).
-* **Cross-Team Agent Simulation:** Multi-service AI orchestration scenarios for senior engineers.
-* **AI Lifecycle Retrospectives:** Quarterly review of AI-generated features and their production impact.
+> **Goal:** These metrics quantify both **AI oversight effectiveness** and **human ownership**.
 
 ---
 
-## ✅ Key Takeaways
+## 7️⃣ **Optional Extensions**
+
+* **Advanced Security Workshop**: Deep dive into AI-specific attack vectors (e.g., prompt injection, phantom dependencies).
+* **Cross-Team Agent Simulation**: Multi-service AI orchestration scenarios for senior engineers.
+* **AI Lifecycle Retrospectives**: Quarterly review of AI-generated features and their production impact.
+
+---
+
+## ✅ **Key Takeaways**
 
 * AI is **a tool, not a replacement**.
 * System Owners maintain **first-principles control** over every output.
@@ -139,4 +136,6 @@ Managers should focus on **orchestration, not syntax evaluation**:
 > **Next Step:** Pair this onboarding with the **PR Template** and **Technical Specification Template** to create a complete AI-Safe workflow pipeline.
 
 ---
+
+By following this **AI-Augmented Engineering: Team Onboarding Guide**, your team will not only master AI tools but will also uphold the high standards of security, performance, and reliability essential in modern software systems. The guide ensures engineers can confidently manage AI-driven code without compromising on best practices.
 
