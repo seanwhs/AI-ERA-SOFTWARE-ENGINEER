@@ -1,62 +1,62 @@
-# 🛡️ AI-Era Threat Modeling Framework
+# 🛡️ **AI-Era Threat Modeling Framework**
 
 **Purpose:**
 Enable engineering and security teams to **identify potential threats, assess risk, and design mitigations proactively**, especially for high-pressure production incidents.
 
 ---
 
-## 1️⃣ Threat Modeling Objectives
+## **1️⃣ Threat Modeling Objectives**
 
-* Identify **critical assets** (data, services, endpoints)
-* Enumerate **potential attackers and motivations**
-* Analyze **attack surfaces** across systems and services
-* Define **security controls and mitigations**
-* Integrate **AI-assisted monitoring and response**
+* **Identify critical assets** (data, services, endpoints)
+* **Enumerate potential attackers and motivations**
+* **Analyze attack surfaces** across systems and services
+* **Define security controls and mitigations**
+* **Integrate AI-assisted monitoring and response**
 
 ---
 
-## 2️⃣ Threat Modeling Process
+## **2️⃣ Threat Modeling Process**
 
-1. **Define Scope & Assets**
+### 1. **Define Scope & Assets**
 
-   * Systems, services, APIs, databases, user data
-   * Critical components for uptime, confidentiality, integrity
+* Systems, services, APIs, databases, user data
+* Critical components for uptime, confidentiality, and integrity
 
-2. **Identify Threat Agents**
+### 2. **Identify Threat Agents**
 
-   * External attackers (hackers, competitors)
-   * Insider threats (malicious/accidental)
-   * Automated threats (bots, compromised scripts)
-   * AI misuse (improper LLM access, auto-deployment bugs)
+* **External attackers:** hackers, competitors, nation-state actors
+* **Insider threats:** malicious or accidental internal actors
+* **Automated threats:** bots, compromised scripts, DDoS
+* **AI misuse:** improper access, misconfigurations, unintended deployments
 
-3. **Enumerate Threats**
-   Use STRIDE framework for structured identification:
+### 3. **Enumerate Threats**
 
-| STRIDE                     | Threat Example                  | Potential Impact         |
-| -------------------------- | ------------------------------- | ------------------------ |
-| S - Spoofing               | Fake API requests or user login | Unauthorized access      |
-| T - Tampering              | Alter database values           | Data integrity loss      |
-| R - Repudiation            | Deleted audit logs              | Lack of accountability   |
-| I - Information Disclosure | Leaked secrets in logs          | Confidentiality breach   |
-| D - Denial of Service      | Flood microservices / API       | Availability degradation |
-| E - Elevation of Privilege | Exploit root escalation         | Full system compromise   |
+Use **STRIDE** framework for structured identification:
 
-4. **Attack Surface Analysis**
+| STRIDE                         | Threat Example                  | Potential Impact         |
+| ------------------------------ | ------------------------------- | ------------------------ |
+| **S - Spoofing**               | Fake API requests or user login | Unauthorized access      |
+| **T - Tampering**              | Alter database values           | Data integrity loss      |
+| **R - Repudiation**            | Deleted audit logs              | Lack of accountability   |
+| **I - Information Disclosure** | Leaked secrets in logs          | Confidentiality breach   |
+| **D - Denial of Service**      | Flood microservices / API       | Availability degradation |
+| **E - Elevation of Privilege** | Exploit root escalation         | Full system compromise   |
 
-   * Entry points: API endpoints, web apps, remote access, CI/CD pipelines
-   * Data flows: internal microservices, cloud storage, third-party APIs
-   * Dependencies: libraries, external SaaS, databases
+### 4. **Attack Surface Analysis**
 
-5. **Mitigation & Controls**
+* **Entry Points:** API endpoints, web apps, remote access, CI/CD pipelines
+* **Data Flows:** internal microservices, cloud storage, third-party APIs
+* **Dependencies:** libraries, external SaaS, databases
 
-   * Preventive: authentication, input validation, firewall rules
-   * Detective: logging, monitoring, anomaly detection
-   * Corrective: backups, automated rollback, AI-assisted remediation
+### 5. **Mitigation & Controls**
 
-6. **Risk Scoring**
+* **Preventive:** Authentication, input validation, firewall rules
+* **Detective:** Logging, monitoring, anomaly detection
+* **Corrective:** Backups, automated rollback, AI-assisted remediation
 
-   * Likelihood × Impact (1–5 scale)
-   * Example Table:
+### 6. **Risk Scoring**
+
+* **Likelihood × Impact** (1–5 scale)
 
 | Threat            | Likelihood (1-5) | Impact (1-5) | Risk Score | Mitigation Priority |
 | ----------------- | ---------------- | ------------ | ---------- | ------------------- |
@@ -66,7 +66,7 @@ Enable engineering and security teams to **identify potential threats, assess ri
 
 ---
 
-## 3️⃣ Threat Modeling Template (Cut-and-Paste)
+## **3️⃣ Threat Modeling Template (Cut-and-Paste)**
 
 **System/Service:** ___________________
 **Critical Assets:** ___________________
@@ -94,15 +94,15 @@ Enable engineering and security teams to **identify potential threats, assess ri
 
 ### Attack Surface
 
-* Entry Points: ___________________
-* Data Flows: ___________________
-* Dependencies: ___________________
+* **Entry Points:** ___________________
+* **Data Flows:** ___________________
+* **Dependencies:** ___________________
 
 ### Mitigation Controls
 
-* Preventive: ___________________
-* Detective: ___________________
-* Corrective: ___________________
+* **Preventive:** ___________________
+* **Detective:** ___________________
+* **Corrective:** ___________________
 
 ### Notes
 
@@ -110,39 +110,46 @@ Enable engineering and security teams to **identify potential threats, assess ri
 
 ---
 
-## 4️⃣ 3 A.M. Drill / Desktop Exercises
+## **4️⃣ 3 A.M. Drill / Desktop Exercises**
 
-* Use this threat model **before the exercises** to inject realistic incidents.
-* Score each scenario based on **likelihood, impact, and red-herring probability**.
-* Document how **human-first investigation + AI-assisted response** mitigates each identified threat.
-* Post-exercise, **update the threat model** based on lessons learned, new attack vectors, and AI observations.
-
----
-# Threat Modeling
-
-Threat modeling ensures systems are secure **by design**, not by accident.
+* **Use this threat model** before the exercises to inject realistic incidents.
+* **Score each scenario** based on **likelihood, impact, and red-herring probability**.
+* **Document how human-first investigation + AI-assisted response** mitigates each identified threat.
+* **Post-exercise**, **update the threat model** based on lessons learned, new attack vectors, and AI observations.
 
 ---
 
-## Goals
-- Identify potential attackers
-- Understand attack surfaces
-- Reduce risk before implementation
+## **Threat Modeling Overview**
+
+**Threat modeling** is a proactive approach to identify, assess, and mitigate security risks in your systems before they become serious issues. The **AI-Era** introduces new threats that must be managed, especially the risks associated with automated deployments, AI model misconfigurations, and AI-assisted attacks.
 
 ---
 
-## Typical Threat Modeling Tasks
-- Identify assets and trust boundaries
-- Enumerate threats (STRIDE)
-- Assess likelihood and impact
-- Define mitigations
+### **Goals**
+
+* **Identify potential attackers**
+* **Understand attack surfaces**
+* **Reduce risk before implementation**
 
 ---
 
-## AI-Era Considerations
-- AI-generated code may introduce insecure patterns
-- Engineers must review and validate security assumptions
-- Threat models must be updated continuously
+### **Typical Threat Modeling Tasks**
 
-Security is not optional.
-It is an architectural responsibility.
+* **Identify assets** and trust boundaries
+* **Enumerate threats** (using STRIDE)
+* **Assess likelihood and impact**
+* **Define mitigations**
+
+---
+
+### **AI-Era Considerations**
+
+* **AI-generated code** may introduce insecure patterns
+* Engineers must **review and validate** security assumptions made by AI
+* **Threat models** must be continuously updated as AI introduces new vulnerabilities and attack vectors
+
+---
+
+### **Key Takeaway**
+
+**Security is not optional.** It is an architectural responsibility that involves a mix of **human-first decision-making** and **AI-assisted analysis**.
