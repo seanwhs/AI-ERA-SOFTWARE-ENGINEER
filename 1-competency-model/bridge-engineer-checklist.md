@@ -109,28 +109,16 @@ Score yourself for each competency:
 | **System Owner**       | Own full system lifecycle                  | Designs resilient systems, enforces standards, leads AI workflows |
 | **Senior / Architect** | Multi-system strategy & org-level guidance | Guides architecture, sets standards, mentors teams                |
 
-### System Owner Observable Behaviors
+### Observable Behaviors & Responsibilities
 
 * Define end-to-end system boundaries
 * Anticipate failures and degradation paths
 * Treat AI output as raw material
 * Document reasoning, trade-offs, AI contributions
 * Lead postmortems and incident reviews
-
-### System Owner Responsibilities
-
-* System lifecycle ownership: design → production → evolution
-* CI/CD, monitoring, observability
-* Technical reviews and AI audits
+* Oversee CI/CD, monitoring, and observability
 * Maintain API contracts and backward compatibility
-
-### Progression to Senior / Architect
-
-* Trade-offs across services and teams
-* Multi-system architecture & emergent behavior planning
-* Establish ADRs and enforce standards
-* Organizational AI governance
-* Enterprise-level postmortems and Zero Trust security
+* Establish ADRs and enforce standards (Senior/Architect)
 
 ---
 
@@ -150,7 +138,7 @@ Score yourself for each competency:
 
 ## 4️⃣ Readiness Dashboards
 
-### Radar Chart — Competency Overview
+### Competency Radar Overview
 
 | Dimension                             | Score |
 | ------------------------------------- | ----- |
@@ -183,7 +171,7 @@ Score yourself for each competency:
 | Postmortem & Incident Leadership      |       | 🟢/🟡/🔴 |                  |
 | Stakeholder Communication & Alignment |       | 🟢/🟡/🔴 |                  |
 
-> **Legend:** 🟢 = Competent / Owner | 🟡 = Needs guided practice | 🔴 = Critical gap
+> 🟢 = Competent / Owner | 🟡 = Needs guided practice | 🔴 = Critical gap
 
 ---
 
@@ -215,28 +203,43 @@ Score yourself for each competency:
 | Apr   | System Owner       |           |             |       |
 | May   | Senior / Architect |           |             |       |
 
-> Track improvement and focus development on weakest dimensions.
+---
+
+## 5️⃣ Scoring Guide — Readiness Signals
+
+| Score | Meaning                                                            |
+| ----- | ------------------------------------------------------------------ |
+| **1** | Foundational — learning or assisted only                           |
+| **2** | Functional — works independently with reliability                  |
+| **3** | Bridge Engineer — owns systems, audits AI, catches subtle failures |
+| **4** | Senior / Architect — leads multi-system strategy, sets standards   |
+
+**Maximum total score:** 24
+
+### Interpretation
+
+| Total Score | Readiness Level                                        |
+| ----------- | ------------------------------------------------------ |
+| 6–10        | Syntax-focused developer — limited system awareness    |
+| 11–15       | Functional — productive but requires supervision       |
+| 16–20       | **Bridge Engineer — production capable**               |
+| 21–24       | Senior / Architect trajectory — system-level ownership |
+
+> **Usage Notes:** Avoid inflating scores; re-score quarterly; track concrete examples.
+> **Reminder:** Titles do not determine readiness. **Behavior under pressure does.**
 
 ---
 
-## 5️⃣ Readiness Signals
+## 6️⃣ System Owner Competency Focus
 
-**Bridge Engineer:**
+| Dimension                             | Focus                                                             |
+| ------------------------------------- | ----------------------------------------------------------------- |
+| System Thinking & Architecture        | End-to-end design, ADRs, scalability, failure anticipation        |
+| AI Orchestration & Oversight          | Constrain outputs, audit AI code, validate production safety      |
+| Security & Zero Trust                 | Least privilege, authenticate requests, mitigate AI-induced risks |
+| Failure & Incident Management         | Predictable failures, graceful degradation, postmortem leadership |
+| Operational & Deployment Mastery      | CI/CD, monitoring, observability, disaster recovery               |
+| Technical Leadership & Mentorship     | Coach teams, enforce standards, lead design reviews               |
+| Postmortem & Incident Leadership      | Lead investigations, integrate AI failure cases                   |
+| Stakeholder Communication & Alignment | Translate technical trade-offs, enforce system-level priorities   |
 
-* Relies on AI to explain code
-* Avoids system diagrams or end-to-end tracing
-* Thinks locally, not system-wide
-
-**System Owner:**
-
-* Reasons across layers instinctively
-* Anticipates AI & operational failures
-* Owns security, architecture, system-level outcomes
-
-**Senior / Architect:**
-
-* Sets standards, guides multiple systems
-* Mentors Bridge Engineers & System Owners
-* Defines org-wide architectural strategy
-
-> *“Value in the AI era is not writing code faster — it’s knowing what must not fail, before it does.”*
